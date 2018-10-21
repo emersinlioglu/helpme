@@ -120,7 +120,7 @@ class AdminProfileController extends Controller
     public function changepass(Request $request, $id)
     {
         $user = User::findOrFail($id);
-        $input = "";
+        $input = [];
         if ($request->cpass){
             if (Hash::check($request->cpass, $user->password)){
 
