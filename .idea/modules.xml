@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/laradoc.iml" filepath="$PROJECT_DIR$/.idea/laradoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/helpme-lu.iml" filepath="$PROJECT_DIR$/.idea/helpme-lu.iml" />
     </modules>
   </component>
 </project>
