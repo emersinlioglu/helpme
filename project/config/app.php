@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://relaunch.helpme-lu.de/'),
+    'url' => env('APP_URL', 'http://helpme-lu.de/relaunch/'),
 
     /*
     |--------------------------------------------------------------------------
