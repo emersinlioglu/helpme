@@ -27,7 +27,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-sm-3" for="website_title">Home * <span>(In Any Language)</span></label>
                                             <div class="col-sm-8">
-                                                <input type="text" name="title" value="{{$language->home}}" id="website_title" class="form-control" placeholder="Your Language" required>
+                                                <input type="text" name="home" value="{{$language->home}}" id="website_title" class="form-control" placeholder="Your Language" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
