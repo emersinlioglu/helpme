@@ -101,6 +101,13 @@
                             </ul>
                         </li>
                         <li>
+                            <a href="#gallerySection" data-toggle="collapse" aria-expanded="false"><i class="fa fa-fw fa-history"></i>  Projects</a>
+                            <ul class="collapse list-unstyled" id="gallerySection">
+                                <li><a href="{!! url('admin/project/create') !!}"><i class="fa fa-fw fa-plus-square"></i>Create Project</a></li>
+                                <li><a href="{!! url('admin/project') !!}"><i class="fa fa-fw fa-list"></i>All Projects</a></li>
+                            </ul>
+                        </li>
+                        <li>
                             <a href="{!! url('admin/withdraws') !!}"><i class="fa fa-fw fa-usd"></i> Withdraws</a>
                         </li>
                         <li>

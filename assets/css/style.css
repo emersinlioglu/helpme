@@ -59,7 +59,7 @@ a:hover { text-decoration: none }
   z-index: 999;
 }
 .header-top-area {
-    background-color: #288000;
+    background-color: #00affa;
     color: #fff;
     padding: 5px 0;
 }
@@ -78,7 +78,7 @@ a:hover { text-decoration: none }
     transition: .4s;
     font-weight: 600;
 }
-.header-top-area .top-social-links li a:hover {background-color: #fff; color: #288000;}
+.header-top-area .top-social-links li a:hover {background-color: #fff; color: #00affa;}
 .header-top-area .top-social-links .top-social-links-li a {
     border: 1px solid #fff;
 	padding: 0;
@@ -91,7 +91,7 @@ a:hover { text-decoration: none }
 	margin-right: 3px;
 	font-size: 12px;
 }
-.header-top-area .top-social-links .top-social-links-li a:hover {background-color: #fff; color: #288000;}
+.header-top-area .top-social-links .top-social-links-li a:hover {background-color: #fff; color: #00affa;}
 .logo img {
     height: 50px;
     max-width: 100%;
@@ -99,8 +99,8 @@ a:hover { text-decoration: none }
 .header-area-wrapper {
     background-color: #fff;
     padding: 8px 0;
-    border-top: 1px solid #288000;
-    border-bottom: 1px solid #288000;
+    border-top: 1px solid #00affa;
+    border-bottom: 1px solid #00affa;
 }
 .mainmenu {text-align: right;}
 .mainmenu ul {margin: 0; padding: 0; list-style: none;}
@@ -109,9 +109,9 @@ a:hover { text-decoration: none }
     position: relative;
     padding: 13px 0;
 }
-.mainmenu li.active a {color: #288000;}
+.mainmenu li.active a {color: #00affa;}
 .mainmenu li a {
-    color: #288000;
+    color: #00affa;
     font-weight: 700;
     padding-left: 40px;
     display: block;
@@ -121,20 +121,20 @@ a:hover { text-decoration: none }
     background-color: #fff;
     left: 25px;
     top: 55px;
-    color: #288000;
+    color: #00affa;
     width: 220px;
     text-align: left;
     opacity: 0;
     visibility: hidden;
     z-index: 99;
     transition: .4s;
-    border-top: 3px solid #288000;
+    border-top: 3px solid #00affa;
 }
 .mainmenu li ul li {
     display: block;
     padding-top: 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid #288000;
+    border-bottom: 1px solid #00affa;
     margin: 10px;
 }
 .mainmenu li ul li:last-child {border-bottom: none; padding-bottom: 0;}
@@ -144,17 +144,17 @@ a:hover { text-decoration: none }
 }
 .mainmenu li li a {
     font-size: 12px;
-    color: #288000;
+    color: #00affa;
     padding-left: 0;
 }
-.mainmenu li:hover > a {color: #288000;}
-.mainmenu li:hover li:hover > a {color: #288000;}
+.mainmenu li:hover > a {color: #00affa;}
+.mainmenu li:hover li:hover > a {color: #00affa;}
 
 .slicknav_menu {display: none;}
 .slicknav_btn {
     float: none;
     display: inline-block;
-    background-color: #288000;
+    background-color: #00affa;
     margin-left: 10px;
     border-radius: 0;
 }
@@ -162,13 +162,13 @@ a:hover { text-decoration: none }
 .slicknav_menu .slicknav_menutxt {text-shadow: 0 0 0;}
 .slicknav_icon i{color:#FFFFFF;}
 .slicknav_nav {
-    background-color: #288000; 
+    background-color: #00affa; 
     text-align: left;
     margin-top: 10px;
     border-top: 3px solid #ddd;
 }
 .slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover {
-    background-color: #288000; 
+    background-color: #00affa; 
     border-radius: 0; 
     color: #fff;
 }
@@ -289,7 +289,7 @@ html, body {height: 100%;}
 
 /* Starting of charity service area */
 .charity-service-area-wrapper {
-    background-color: #288000;
+    background-color: #00affa;
     position: relative;
 }
 .single-charity-service-area {
@@ -314,7 +314,7 @@ html, body {height: 100%;}
 
 .boxed-btn {
     display: inline-block;
-    background-color: #288000;
+    background-color: #00affa;
     color: #ffffff;
     font-weight: 600;
     padding: 10px 30px;
@@ -345,7 +345,7 @@ html, body {height: 100%;}
     padding: 5px;
     transition: 0.4s;
 }
-.single-service-box:hover .service-icon img {border-color: #288000;}
+.single-service-box:hover .service-icon img {border-color: #00affa;}
 .service-text {
     overflow: hidden;
 }
@@ -420,7 +420,7 @@ html, body {height: 100%;}
     opacity: .8;
 }
 .single-counter-box {font-size: 18px;}
-.single-counter-box i.fa {font-size: 35px; color: #288000;}
+.single-counter-box i.fa {font-size: 35px; color: #00affa;}
 .counter-number {
     color: #ffffff;
     margin-top: 25px;
@@ -480,7 +480,7 @@ html, body {height: 100%;}
     transition: 0.4s;
 }
 .gallery-icons a {
-    background: #288000;
+    background: #00affa;
     color: #fff;
     font-size: 16px;
     width: 40px;
@@ -559,7 +559,7 @@ html, body {height: 100%;}
     display: inline-block;
     transition: .3s;
 }
-.testimonial-section .owl-nav div:hover {background-color: #288000; border: 1px solid #288000; color: #fff;}
+.testimonial-section .owl-nav div:hover {background-color: #00affa; border: 1px solid #00affa; color: #fff;}
 .testimonial-section .owl-nav {
     position: absolute;
     right: 0;
@@ -592,20 +592,20 @@ html, body {height: 100%;}
     height: 120px;
 }
 .comments-form input[type="submit"], .comments-form button[type="submit"]  {
-    background-color: #288000;
+    background-color: #00affa;
     width: auto;
     display: inline-block;
     color: #fff;
     padding: 13px 25px;
     border-radius: 2px;
     font-size: 14px;
-    border: 1px solid #288000;
+    border: 1px solid #00affa;
     transition: .4s;
 }
 .comments-form input[type="submit"]:hover, button[type="submit"]:hover {
-    border: 1px solid #288000;
+    border: 1px solid #00affa;
     background-color: #fff;
-    color: #288000;
+    color: #00affa;
 }
 .contact-info {
     position: relative;
@@ -619,7 +619,7 @@ html, body {height: 100%;}
     top: 5px;
 }
 .contact-info i.fa {
-    color: #288000;
+    color: #00affa;
     font-size: 20px;
 }
 .contact-info span {margin-left: 30px;}
@@ -711,7 +711,7 @@ html, body {height: 100%;}
 .single-team-area:hover .member-details h4 {margin-top: -30px;}
 .member-social-icon ul {margin: 0; padding: 0; list-style: none;}
 .member-social-icon li {display: inline-block;}
-.member-social-icon li a {color: #288000; padding: 10px; transition: .4s;}
+.member-social-icon li a {color: #00affa; padding: 10px; transition: .4s;}
 .member-social-icon li a:hover {color: #fff;}
 .member-social-icon {padding-top: 80px; -webkit-transition: .4s; transition: .4s}
 .single-team-area:hover .member-social-icon {padding-top: 20px;}
@@ -727,7 +727,7 @@ html, body {height: 100%;}
     color: #999;
     font-weight: 300;
     box-shadow: 0 0 10px #f5f5f5;
-    border: 1px solid #288000;
+    border: 1px solid #00affa;
     transition: .3s;
     height: 490px;
     width: 100%;
@@ -798,14 +798,14 @@ a.single-all-blogs-box:focus{text-decoration: none;}
 /*.social-sharing a.pinterest:hover {background-color: #fff; border: 1px solid #d6061e; color: #d6061e;}*/
 .entry-content p {margin-bottom: 20px; text-align: justify;}
 
-.post-heading {border-bottom: 2px solid #288000; padding-bottom: 10px;}
+.post-heading {border-bottom: 2px solid #00affa; padding-bottom: 10px;}
 
 .post-sidebar-area ul {margin: 0; padding: 0; list-style: none;}
 .post-sidebar-area li {border-bottom: 1px solid #f0f0f0; padding: 15px 0;}
 .post-sidebar-area li span {display: block; font-size: 12px; color: #ccc; margin-left: 22px;}
 .post-sidebar-area li a {color: #999999; font-size: 18px; transition: .3s;}
 .post-sidebar-area li i.fa {font-size: 20px; margin-right: 10px;}
-.post-sidebar-area li a:hover {color: #288000;}
+.post-sidebar-area li a:hover {color: #00affa;}
 /*  Ending of Blogs Details  */
 
 /* Starting of All blogs area */
@@ -836,7 +836,7 @@ a.single-all-blogs-box:focus{text-decoration: none;}
    transform: scale(1.08);
 }
 .logo-carousel-wrapper {
-background: #288000;
+background: #00affa;
     padding-bottom: 0;
 }
 .single-logo-item {
@@ -869,27 +869,27 @@ background: #288000;
 /*  Starting of Volunteer registration area */
 .volunteer-registration-wrapper {background-color: #ffffff;}
 .volunteer-registration .panel-heading {
-    background-color: #288000;
-    border-color: #288000;
+    background-color: #00affa;
+    border-color: #00affa;
     color: #ffffff;
     font-size: 20px;
     font-weight: 600; 
 }
 .boxed-btn.register {
-    background-color: #288000;
+    background-color: #00affa;
     border-radius: 0; 
     margin-top: 0;
 }
 .boxed-btn.register:hover {
-    border-color: #288000; 
-    color: #288000;
+    border-color: #00affa; 
+    color: #00affa;
 }
 .volunteer-registration .form-control {
     border-radius: 0;
     height: 40px;
     box-shadow: none;
 }
-.volunteer-registration a {color: #288000;}
+.volunteer-registration a {color: #00affa;}
 /*  Ending of Volunteer registration area */
 
 /*  Starting of footer area  */
@@ -1098,7 +1098,7 @@ background: #288000;
     padding-top: 30px;
 }
 .subscribe-newsletter-area {
-    background-color: #288000;
+    background-color: #00affa;
     padding: 40px 30px 33px 30px;
     color: #ffffff;
     position: absolute;
@@ -1141,7 +1141,7 @@ background: #288000;
 .single-featured-item {
     color: #000000;
     box-shadow: 0 0 10px #f5f5f5;
-    border: 1px solid #288000;
+    border: 1px solid #00affa;
 }
 .single-featured-item:hover img.featured-img{
     transform: scale(1.1);
@@ -1156,7 +1156,7 @@ background: #288000;
 .featured-text {
     background-color: #ffffff;
     padding: 20px;
-    border-bottom: 3px solid #288000;
+    border-bottom: 3px solid #00affa;
 }
 .featured-text h3 {
     min-height: 60px;
@@ -1172,11 +1172,11 @@ background: #288000;
 }
 .featured-meta-bottom {
     font-size: 15px; 
-    color: #288000;
+    color: #00affa;
     padding-top: 20px;
 }
 .featured-meta-bottom .featured-left {
-    background-color: #288000;
+    background-color: #00affa;
     color: #ffffff;
     padding: 5px 10px 6px 10px;
 }
@@ -1209,14 +1209,14 @@ background: #288000;
 .donate-area p {margin: 0;}
 .donate-user-info, .campign-social-links {padding-bottom: 20px;}
 .campign-social-links .a2a_svg, .a2a_count {
-    background-color: #288000 !important;
+    background-color: #00affa !important;
     height: 40px !important;
     width: 40px !important;
     border-radius: 50% !important;
 }
-.donate-user-info .colored {color: #288000; font-weight: 600;}
+.donate-user-info .colored {color: #00affa; font-weight: 600;}
 .campign-social-links a {
-    background-color: #288000;
+    background-color: #00affa;
     color: #ffffff;
     height: 40px;
     width: 40px;
@@ -1249,7 +1249,7 @@ background: #288000;
 }
 .donate-area li a:hover {background-color: #ddd;}
 .donate-area button {
-    background-color: #288000;
+    background-color: #00affa;
     color: #ffffff;
     padding: 8px 20px;
     font-weight: 600;
@@ -1262,7 +1262,7 @@ background: #288000;
 
 /* New Donate Css */
 .donate-area .donate-submit {
-    background-color: #288000;
+    background-color: #00affa;
     color: #ffffff;
     padding: 10px 20px;
     font-weight: 600;

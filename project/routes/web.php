@@ -162,6 +162,10 @@ Route::get('/admin/users/status/{id}/{status}', 'UsersController@status');
 Route::post('/admin/users/emailsend', 'UsersController@sendemail');
 Route::resource('/admin/users', 'UsersController');
 
+Route::resource('/admin/project', 'ProjectController');
+Route::get('/admin/project/create', 'ProjectController@create');
+Route::post('/admin/project/store', 'ProjectController@store')->name('project.submit');
+
 Route::post('/payment', 'PaymentController@store')->name('payment.submit');
 Route::get('/payment/cancle', 'PaymentController@paycancle')->name('payment.cancle');
 Route::get('/payment/return', 'PaymentController@payreturn')->name('payment.return');
