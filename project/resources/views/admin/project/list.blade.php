@@ -13,10 +13,7 @@
                                 <div class="add-product-box">
                                     <div class="add-product-header projects">
                                         <h2>projects</h2>
-                                            <span>
-                                                <a href="{{url('admin/project/pending')}}"><strong> Pending</strong></a>
-                                            </span>
-                                            <a href="{{url('admin/project/create')}}" class="add-newProduct-btn"><i class="fa fa-plus"></i> Create New Project</a>
+                                        <a href="{{url('admin/project/create')}}" class="add-newProduct-btn"><i class="fa fa-plus"></i> Create New Project</a>
                                     </div>
                                     <hr/>
                                     <div class="table-responsive">

@@ -9,3 +9,16 @@ COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 AUTO_INCREMENT=2
 ;
+
+CREATE TABLE `project_image` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NULL DEFAULT NULL,
+	`text` TEXT NULL,
+	`image` VARCHAR(255) NOT NULL,
+	`text_position` VARCHAR(255) NULL DEFAULT NULL,
+	`status` INT(11) NOT NULL DEFAULT '1',
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;

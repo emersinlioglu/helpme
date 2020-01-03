@@ -163,7 +163,10 @@ Route::post('/admin/users/emailsend', 'UsersController@sendemail');
 Route::resource('/admin/users', 'UsersController');
 
 Route::resource('/admin/project', 'ProjectController');
+Route::get('/admin/project/{id}', 'ProjectController@show');
 Route::get('/admin/project/create', 'ProjectController@create');
+Route::post('/admin/project/{id}/edit', 'ProjectController@edit');
+//Route::post('/admin/project/{id}/update', 'ProjectController@update');
 Route::post('/admin/project/store', 'ProjectController@store')->name('project.submit');
 
 Route::post('/payment', 'PaymentController@store')->name('payment.submit');

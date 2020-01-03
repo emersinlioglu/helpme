@@ -30,6 +30,16 @@
                                                 <textarea class="form-control" name="description" id="update_project_description" rows="5" placeholder="Project Description" style="resize: vertical;" ></textarea>
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3"></label>
+                                            <div class="col-sm-8" data-toggle="buttons">
+                                                <label class="btn btn-default">
+                                                    <input type="checkbox" name="active" value="1">
+                                                    <span class="go_checkbox"><i class="glyphicon glyphicon-ok"></i></span>
+                                                    Active
+                                                </label>
+                                            </div>
+                                        </div>
                                         <hr/>
                                         <div class="add-product-footer">
                                             <button name="addProduct_btn" type="submit" class="btn btn-success add-product_btn">Create Project</button>

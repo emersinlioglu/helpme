@@ -35,7 +35,7 @@ class ProjectController extends Controller
     {
         $language = SectionTitles::findOrFail(1);
         $projects = Project::orderBy('id','desc')->get();
-        return view('admin.projectlist',compact('projects','language'));
+        return view('admin.project.list',compact('projects','language'));
     }
 
     /**
@@ -47,7 +47,7 @@ class ProjectController extends Controller
     {
 //        $categories = Category::all();
         $categories = [];
-        return view('admin.projectadd',compact('categories'));
+        return view('admin.project.add',compact('categories'));
     }
 
     /**
@@ -75,7 +75,7 @@ class ProjectController extends Controller
     public function show($id)
     {
         $project = Project::findOrFail($id);
-        return view('admin.projectdetails',compact('project'));
+        return view('admin.project.details',compact('project'));
     }
 
     /**
@@ -88,7 +88,7 @@ class ProjectController extends Controller
     {
         $categories = Category::all();
         $project = Project::findOrFail($id);
-        return view('admin.projectedit',compact('project','categories'));
+        return view('admin.project.edit',compact('project','categories'));
     }
 
     /**
@@ -100,22 +100,10 @@ class ProjectController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $campaign = Campaign::findOrFail($id);
-        $data = $request->all();
-        $data['featured'] = 0;
+        $project = Project::findOrFail($id);
+        $project->update($request->all());
 
-        if ($request->featured == 1){
-            $data['featured'] = 1;
-        }
-
-        if ($file = $request->file('photo')){
-            $photo_name = time().$request->file('photo')->getClientOriginalName();
-            $file->move('assets/images/campaign',$photo_name);
-            $data['feature_image'] = $photo_name;
-        }
-        $campaign->update($data);
-
-        return redirect('admin/campaign')->with('message','Campaign Updated Successfully.');;
+        return redirect('admin/project')->with('message','Project Updated Successfully.');;
     }
 
     public function title()
