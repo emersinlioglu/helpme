@@ -103,6 +103,7 @@
                         <ul id="menuResponsive">
                             <li><a href="{{ url('/') }}" class="">{{$language->home}}</a></li>
                             <li><a href="{{ url('/campaigns') }}" class="">{{$language->campaigns}}</a></li>
+                            <li><a href="{{ url('/projects') }}" class="">Projects</a></li>
                             @if($pagesettings[0]->a_status == 1)
                                 <li><a href="{{url('/about')}}" class="">{{$language->about_us}}</a></li>
                             @endif

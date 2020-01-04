@@ -32,6 +32,7 @@
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Active</th>
+                                                <th>Pictures</th>
                                                 <th>Actions</th>
                                             </tr>
                                             </thead>
@@ -41,6 +42,7 @@
                                                     <td>{{$project->name}}</td>
                                                     <td>{{$project->description}}</td>
                                                     <td>{{$project->active}}</td>
+                                                    <td>{{count($project->projectImages)}}</td>
                                                     <td>
                                                         <a href="project/{{$project->id}}" class="btn btn-success product-btn"><i class="fa fa-eye"></i> View </a>
                                                         <a href="project/{{$project->id}}/edit" class="btn btn-primary product-btn"><i class="fa fa-edit"></i> Edit </a>

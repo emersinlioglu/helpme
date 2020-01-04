@@ -55,46 +55,45 @@
                                         <div class="add-product-footer">
                                             <button name="addProduct_btn" type="submit" class="btn btn-success add-product_btn">Update Project</button>
                                         </div>
-
-                                        <hr/>
-
-
-                                        <div class="add-product-footer">
-                                            <a href="{!! url('admin/project-image/create/' . $project->id) !!}" class="btn btn-success add-product_btn"><i class="fa fa-plus"></i> Add Project Image</a>
-                                        </div>
-
-                                        <div class="table-responsive">
-                                            <table id="product-table_wrapper" class="table table-striped table-hover products dt-responsive" cellspacing="0" width="100%">
-                                                <thead>
-                                                <tr>
-                                                    <th width="20%">Project Image</th>
-                                                    <th>Project Image Title</th>
-                                                    <th width="15%">Project Image Text</th>
-                                                    <th>Actions</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                @foreach($projectImages as $projectImage)
-                                                    <tr>
-                                                        <td><img src="{{url('/')}}/assets/images/project/{{$projectImage->project_id}}/{{$projectImage->image}}" alt=""></td>
-                                                        <td>{{$projectImage->title}}</td>
-                                                        <td>{{$projectImage->text}}</td>
-                                                        <td>
-                                                            <form method="POST" action="{!! action('ProjectImageController@destroy',['id' => $projectImage->id]) !!}">
-                                                                {{csrf_field()}}
-                                                                <input type="hidden" name="_method" value="DELETE">
-                                                                {{--<a href="projectImages/{{$projectImage->id}}/edit" class="btn btn-primary product-btn"><i class="fa fa-edit"></i> Edit </a>--}}
-                                                                <button type="submit" class="btn btn-danger product-btn"><i class="fa fa-trash"></i> Remove </button>
-                                                            </form>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-
                                     </form>
+
+                                    <hr/>
+
+
+                                    <div class="add-product-footer">
+                                        <a href="{!! url('admin/project-image/create/' . $project->id) !!}" class="btn btn-success add-product_btn"><i class="fa fa-plus"></i> Add Project Image</a>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table id="product-table_wrapper" class="table table-striped table-hover products dt-responsive" cellspacing="0" width="100%">
+                                            <thead>
+                                            <tr>
+                                                <th width="20%">Project Image</th>
+                                                <th>Project Image Title</th>
+                                                <th width="15%">Project Image Text</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach($projectImages as $projectImage)
+                                                <tr>
+                                                    <td><img src="{{url('/')}}/assets/images/project/{{$projectImage->project_id}}/{{$projectImage->image}}" alt=""></td>
+                                                    <td>{{$projectImage->title}}</td>
+                                                    <td>{{$projectImage->text}}</td>
+                                                    <td>
+                                                        <form method="POST" action="{!! action('ProjectImageController@destroy',['id' => $projectImage->id]) !!}">
+                                                            {{csrf_field()}}
+                                                            <input type="hidden" name="_method" value="DELETE">
+                                                            {{--<a href="projectImages/{{$projectImage->id}}/edit" class="btn btn-primary product-btn"><i class="fa fa-edit"></i> Edit </a>--}}
+                                                            <button type="submit" class="btn btn-danger product-btn"><i class="fa fa-trash"></i> Remove </button>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

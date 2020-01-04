@@ -18,6 +18,7 @@ Route::get('/about', 'FrontEndController@about');
 Route::get('/faq', 'FrontEndController@faq');
 Route::get('/contact', 'FrontEndController@contact');
 Route::get('/campaigns', 'FrontEndController@campaigns');
+Route::get('/projects', 'FrontEndController@projects');
 Route::get('/services/{category}', 'FrontEndController@category');
 Route::post('/campaign/{id}/donate', 'FrontEndController@donate');
 Route::get('/campaign/{id}/donate', 'FrontEndController@donates');

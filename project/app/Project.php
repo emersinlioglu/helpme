@@ -9,9 +9,10 @@ class Project extends Model
     public $table = "project";
     protected $fillable = ['name', 'description', 'active'];
     public $timestamps = false;
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+
+    public function projectImages()
+    {
+        return $this->hasMany('App\ProjectImage');
+    }
+
 }

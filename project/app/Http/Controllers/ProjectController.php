@@ -88,8 +88,8 @@ class ProjectController extends Controller
      */
     public function edit($id)
     {
-        $projectImages = ProjectImage::all();
         $project = Project::findOrFail($id);
+        $projectImages = $project->projectImages;
         return view('admin.project.edit',compact('project','projectImages'));
     }
 

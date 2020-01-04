@@ -12,6 +12,8 @@ use App\FAQ;
 use App\Gallery;
 use App\PageSettings;
 use App\Portfolio;
+use App\Project;
+use App\ProjectImage;
 use App\SectionTitles;
 use App\Service;
 use App\ServiceSection;
@@ -280,6 +282,14 @@ class FrontEndController extends Controller
                 ->orderBy('id','desc')
                 ->get();
         return view('allcampaign', compact('campaigns'));
+    }
+
+    //Show All Packages
+    public function projects()
+    {
+        $projects = Project::where('active', '1')
+            ->get();
+        return view('projects', compact('projects'));
     }
 
     //Show Order Form

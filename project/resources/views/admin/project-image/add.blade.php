@@ -9,6 +9,14 @@
                     <!-- Starting of Dashboard add-projectImage-1 area -->
                     <div class="section-padding add-product-1">
                         <div class="row">
+                            <div id="response" class="col-md-12">
+                                @if(Session::has('message'))
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                        {{ Session::get('message') }}
+                                    </div>
+                                @endif
+                            </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="add-product-box">
                                     <div class="add-product-header">
@@ -51,6 +59,7 @@
                                         <hr/>
                                         <div class="add-product-footer">
                                             <button name="addProduct_btn" type="submit" class="btn btn-success add-product_btn">add projectImage</button>
+                                            <button name="addImageAgain" value="1" type="submit" class="btn btn-success add-product_btn">add projectImage and stay hier</button>
                                         </div>
                                     </form>
                                 </div>

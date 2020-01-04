@@ -58,7 +58,14 @@ class ProjectImageController extends Controller
             $file->move($filename, $photo_name);
         }
         $projectImage->save();
-        return redirect("admin/project/{$projectImage->project_id}/edit")->with('message','ProjectImage Added Successfully.');
+
+        if ($request->get('addImageAgain', 0)) {
+            $url = "admin/project-image/create/{$projectImage->project_id}";
+        } else {
+            $url = "admin/project/{$projectImage->project_id}/edit";
+        }
+
+        return redirect($url)->with('message','ProjectImage Added Successfully.');
     }
 
     /**
