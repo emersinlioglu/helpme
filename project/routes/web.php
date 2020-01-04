@@ -162,13 +162,6 @@ Route::get('/admin/users/status/{id}/{status}', 'UsersController@status');
 Route::post('/admin/users/emailsend', 'UsersController@sendemail');
 Route::resource('/admin/users', 'UsersController');
 
-Route::resource('/admin/project', 'ProjectController');
-Route::get('/admin/project/{id}', 'ProjectController@show');
-Route::get('/admin/project/create', 'ProjectController@create');
-Route::post('/admin/project/{id}/edit', 'ProjectController@edit');
-//Route::post('/admin/project/{id}/update', 'ProjectController@update');
-Route::post('/admin/project/store', 'ProjectController@store')->name('project.submit');
-
 Route::post('/payment', 'PaymentController@store')->name('payment.submit');
 Route::get('/payment/cancle', 'PaymentController@paycancle')->name('payment.cancle');
 Route::get('/payment/return', 'PaymentController@payreturn')->name('payment.return');
@@ -198,3 +191,12 @@ Route::post('/user/registration', 'Auth\ProfileRegistrationController@register')
 Route::get('/user/forgot', 'Auth\ProfileResetPassController@showForgotForm')->name('user.forgotpass');
 Route::post('/user/forgot', 'Auth\ProfileResetPassController@resetPass')->name('user.forgotpass.submit');
 
+// new custom actions
+Route::resource('/admin/project', 'ProjectController');
+Route::get('/admin/project/{id}', 'ProjectController@show');
+Route::get('/admin/project/create', 'ProjectController@create');
+Route::post('/admin/project/{id}/edit', 'ProjectController@edit');
+Route::post('/admin/project/store', 'ProjectController@store')->name('project.submit');
+
+Route::resource('/admin/project-image', 'ProjectImageController');
+Route::get('/admin/project-image/create/{id}', 'ProjectImageController@create');

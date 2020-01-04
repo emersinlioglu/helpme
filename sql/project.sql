@@ -17,7 +17,10 @@ CREATE TABLE `project_image` (
 	`image` VARCHAR(255) NOT NULL,
 	`text_position` VARCHAR(255) NULL DEFAULT NULL,
 	`status` INT(11) NOT NULL DEFAULT '1',
-	PRIMARY KEY (`id`)
+	`project_id` INT(11) NOT NULL,
+	PRIMARY KEY (`id`),
+	INDEX `FK_project_image_project` (`project_id`),
+	CONSTRAINT `FK_project_image_project` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON UPDATE CASCADE ON DELETE CASCADE
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB

@@ -37,6 +37,30 @@
                                     </div>
 
                                     <hr/>
+
+                                    <div class="table-responsive">
+                                        <table id="product-table_wrapper" class="table table-striped table-hover products dt-responsive" cellspacing="0" width="100%">
+                                            <thead>
+                                            <tr>
+                                                <th width="20%">Project Image</th>
+                                                <th width="30%">Project Image Title</th>
+                                                <th width="50%">Project Image Text</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach($projectImages as $projectImage)
+                                                <tr>
+                                                    <td><img src="{{url('/')}}/assets/images/project/{{$projectImage->project_id}}/{{$projectImage->image}}" alt=""></td>
+                                                    <td>{{$projectImage->title}}</td>
+                                                    <td>{{$projectImage->text}}</td>
+                                                </tr>
+                                            @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>

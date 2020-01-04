@@ -6,6 +6,7 @@ use App\Campaign;
 use App\Category;
 use App\Donation;
 use App\Project;
+use App\ProjectImage;
 use App\SectionTitles;
 use App\Settings;
 use App\Subscribers;
@@ -75,7 +76,8 @@ class ProjectController extends Controller
     public function show($id)
     {
         $project = Project::findOrFail($id);
-        return view('admin.project.details',compact('project'));
+        $projectImages = ProjectImage::all();
+        return view('admin.project.details',compact('project', 'projectImages'));
     }
 
     /**
@@ -86,9 +88,9 @@ class ProjectController extends Controller
      */
     public function edit($id)
     {
-        $categories = Category::all();
+        $projectImages = ProjectImage::all();
         $project = Project::findOrFail($id);
-        return view('admin.project.edit',compact('project','categories'));
+        return view('admin.project.edit',compact('project','projectImages'));
     }
 
     /**
