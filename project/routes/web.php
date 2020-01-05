@@ -197,6 +197,7 @@ Route::resource('/admin/project', 'ProjectController');
 Route::get('/admin/project/{id}', 'ProjectController@show');
 Route::get('/admin/project/create', 'ProjectController@create');
 Route::post('/admin/project/{id}/edit', 'ProjectController@edit');
+Route::get('/admin/project/{id}/delete', 'ProjectController@delete');
 Route::post('/admin/project/store', 'ProjectController@store')->name('project.submit');
 
 Route::resource('/admin/project-image', 'ProjectImageController');

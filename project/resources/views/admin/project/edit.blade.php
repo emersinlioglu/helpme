@@ -32,6 +32,12 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="control-label col-sm-3" for="update_project_from">End Date*</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control datepick" name="from" value="{{$project->from}}" id="update_project_from" placeholder="Enter From Date" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <label class="control-label col-sm-3"></label>
                                             <div class="col-sm-8" data-toggle="buttons">
                                                 <input type="hidden" name="active" value="0" autocomplete="off" checked>
@@ -108,6 +114,9 @@
 @stop
 @section('footer')
     <script>
+        $(".datepick").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
         bkLib.onDomLoaded(function() {
             new nicEditor().panelInstance('update_project_description');
         });

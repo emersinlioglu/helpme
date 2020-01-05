@@ -32,6 +32,10 @@
                                                 <td width="30%"><strong>Project Description:</strong></td>
                                                 <td>{{$project->description}}</td>
                                             </tr>
+                                            <tr>
+                                                <td width="30%"><strong>Project From:</strong></td>
+                                                <td>{{$project->from ? date( 'd.m.Y', strtotime($project->from)) : ''}}</td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -48,7 +52,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            @foreach($projectImages as $projectImage)
+                                            @foreach($project->projectImages as $projectImage)
                                                 <tr>
                                                     <td><img src="{{url('/')}}/assets/images/project/{{$projectImage->project_id}}/{{$projectImage->image}}" alt=""></td>
                                                     <td>{{$projectImage->title}}</td>

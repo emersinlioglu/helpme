@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     public $table = "project";
-    protected $fillable = ['name', 'description', 'active'];
+    protected $fillable = ['name', 'description', 'active', 'from'];
     public $timestamps = false;
 
     public function projectImages()

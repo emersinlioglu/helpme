@@ -31,6 +31,7 @@
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
+                                                <th>From</th>
                                                 <th>Active</th>
                                                 <th>Pictures</th>
                                                 <th>Actions</th>
@@ -41,6 +42,9 @@
                                                 <tr>
                                                     <td>{{$project->name}}</td>
                                                     <td>{{$project->description}}</td>
+                                                    <td>
+                                                        {{$project->from ? date( 'd.m.Y', strtotime($project->from)) : ''}}
+                                                    </td>
                                                     <td>{{$project->active}}</td>
                                                     <td>{{count($project->projectImages)}}</td>
                                                     <td>
@@ -74,7 +78,7 @@
                     <h3 class="modal-title" id="myModalLabel"><i class="fa fa-exclamation-circle fa-fw"></i> Confirm Delete</h3>
                 </div>
                 <div class="modal-body">
-                    <p>You are about to delete this project, All Donations will be deleted under this project.</p>
+                    <p>You are about to delete this project, All uploaded images will be deleted under this project.</p>
                     <h4>Do you want to proceed?</h4>
                 </div>
                 <div class="modal-footer">

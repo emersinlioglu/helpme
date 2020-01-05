@@ -31,6 +31,12 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="control-label col-sm-3" for="update_project_from">End Date*</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control datepick" name="from" id="update_project_from" placeholder="Enter From Date" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <label class="control-label col-sm-3"></label>
                                             <div class="col-sm-8" data-toggle="buttons">
                                                 <label class="btn btn-default">
@@ -61,11 +67,10 @@
 @section('footer')
     <script>
 
-        // $(".datepick").datepicker({
-        //     minDate: new Date(),
-        //     dateFormat: 'yy-mm-dd'
-        // });
-        //
+        $(".datepick").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+
         // $("#uploadTrigger").click(function(){
         //     $("#uploadFile").click();
         //     $("#uploadFile").change(function(event) {

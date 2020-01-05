@@ -76,8 +76,7 @@ class ProjectController extends Controller
     public function show($id)
     {
         $project = Project::findOrFail($id);
-        $projectImages = ProjectImage::all();
-        return view('admin.project.details',compact('project', 'projectImages'));
+        return view('admin.project.details',compact('project'));
     }
 
     /**
@@ -275,12 +274,18 @@ class ProjectController extends Controller
 
     public function delete($id)
     {
-        Withdraw::where('campid',$id)->delete();
-        Donation::where('campid',$id)->delete();
-        $campaign = Campaign::findOrFail($id);
-        unlink('assets/images/campaign/'.$campaign->feature_image);
-        $campaign->delete();
+        $project = Project::findOrFail($id);
+        $project->delete();
+        $this->recurseRmdir('assets/images/project/'.$project->id);
 
-        return redirect('admin/campaign')->with('message','Campaign Deleted Successfully.');
+        return redirect('admin/project')->with('message','Campaign Deleted Successfully.');
+    }
+
+    private function recurseRmdir($dir) {
+        $files = array_diff(scandir($dir), array('.','..'));
+        foreach ($files as $file) {
+            (is_dir("$dir/$file")) ? recurseRmdir("$dir/$file") : unlink("$dir/$file");
+        }
+        return rmdir($dir);
     }
 }
