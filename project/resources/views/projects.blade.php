@@ -10,15 +10,47 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .fa-info-circle {
+        font-size: 14px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
 </style>
+
+<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Project Details
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h5>
+            </div>
+            <div class="modal-body">
+
+                adsfasdfa sdf asdf asdf asdf
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Starting of Latest Campaigns area -->
     <div class="section-padding latest featured-auction-wrapper wow fadeInUp">
         @foreach($projects as $project)
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h2>{{$project->name}}</h2>
+                        <h2>{{$project->name}} <i class="fa fa-info-circle project-details" data-description="{{$project->description}}"></i></h2>
+
                         {{--<h2>{{$languages->newcamp_title}}</h2>--}}
                         {{--<p>{{$languages->newcamp_text}}</p>--}}
                     </div>
@@ -78,5 +110,10 @@
 @stop
 
 @section('footer')
-
+    <script>
+        $('.project-details').click(function() {
+            $('#mymodal').find('.modal-body').html($(this).data('description'));
+            $('#mymodal').modal();
+        })
+    </script>
 @stop
