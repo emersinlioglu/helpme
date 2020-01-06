@@ -23,7 +23,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                    Project Details
+                    Projekt-Details
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -49,10 +49,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h2>{{$project->name}} <i class="fa fa-info-circle project-details" data-description="{{$project->description}}"></i></h2>
-
-                        {{--<h2>{{$languages->newcamp_title}}</h2>--}}
-                        {{--<p>{{$languages->newcamp_text}}</p>--}}
+                        <h2>{{$project->name}} @if($project->description)<i class="fa fa-info-circle project-details" data-description="{{$project->description}}"></i>@endif</h2>
                     </div>
                 </div>
             </div>

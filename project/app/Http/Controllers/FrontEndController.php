@@ -288,7 +288,8 @@ class FrontEndController extends Controller
     public function projects()
     {
         $projects = Project::where('active', '1')
-            ->get();
+                ->orderBy('from','desc')
+                ->get();
         return view('projects', compact('projects'));
     }
 
